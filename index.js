@@ -30,7 +30,10 @@ app.post("/api/contactus", async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
-
+//commemts add
+app.delete("/api/delte",(req,res)=>{
+  const id = UserModel.find(_id)
+})
 mongoose.connect("mongodb+srv://muhammadtahib:Sybrid098@canvasdigital.rvnqiwu.mongodb.net/");
 const db = mongoose.connection;
 
