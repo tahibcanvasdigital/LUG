@@ -32,7 +32,12 @@ app.post("/api/contactus", async (req, res) => {
 });
 //commemts add
 app.delete("/api/delte",(req,res)=>{
-  const id = UserModel.find(_id)
+  const id = UserModel.find(
+    {
+      _id : userId
+    }
+  )
+
 })
 mongoose.connect("mongodb+srv://muhammadtahib:Sybrid098@canvasdigital.rvnqiwu.mongodb.net/");
 const db = mongoose.connection;
